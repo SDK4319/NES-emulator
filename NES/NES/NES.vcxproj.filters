@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CPU">
+      <UniqueIdentifier>{2fa6d369-5f2c-49e6-86a7-9625df62ed36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{4861f701-df2d-427d-9f98-988c3e329c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bus">
+      <UniqueIdentifier>{b2dca058-8b39-4e01-8579-5785296ee399}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU.cpp">
+      <Filter>CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Bus.cpp">
+      <Filter>Bus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPU.h">
+      <Filter>CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Bus.h">
+      <Filter>Bus</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
