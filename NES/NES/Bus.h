@@ -9,7 +9,6 @@ public:
 	~Bus();
 	void write(ui16 addr, ui8 data);
 
-
 public:
 	CPU cpu;
 	std::array<ui8, 64 * 1024> ram;

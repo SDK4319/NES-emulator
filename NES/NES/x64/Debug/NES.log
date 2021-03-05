@@ -1,2 +1,155 @@
-﻿  main.cpp
-  NES.vcxproj -> C:\Projects\NES-emulator\NES\x64\Debug\NES.exe
+﻿  Bus.cpp
+C:\Projects\NES-emulator\NES\NES\CPU.h(13,10): error C3646: 'a': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(13,10): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(13,16): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(14,10): error C3646: 'x': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(14,10): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(14,16): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(15,10): error C3646: 'y': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(15,10): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(15,16): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(16,11): error C3646: 'sp': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(16,11): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(16,17): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(17,11): error C3646: 'pc': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(17,11): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(17,19): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(18,14): error C3646: 'status': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(18,14): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(18,20): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(26,17): error C2061: 구문 오류: 식별자 'Bus'
+C:\Projects\NES-emulator\NES\NES\CPU.h(28,11): error C2065: 'ui16': 선언되지 않은 식별자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(28,7): error C2923: 'std::map': 'ui16'은(는) '_Kty' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(28,7): error C2976: 'std::map': 템플릿 인수가 너무 적습니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\map(75): message : 'std::map' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.h(28,47): error C2061: 구문 오류: 식별자 'ui16'
+C:\Projects\NES-emulator\NES\NES\CPU.h(45,13): error C3646: 'GetFlag': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(45,13): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(45,26): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(48,14): error C3646: 'fetched': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(48,14): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(48,20): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(49,12): error C3646: 'temp': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(49,12): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(49,20): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(50,16): error C3646: 'addr_abs': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(50,16): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(50,24): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(51,16): error C3646: 'addr_rel': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(51,16): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(51,24): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(52,13): error C3646: 'opcode': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(52,13): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(52,19): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(53,13): error C3646: 'cycles': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(53,13): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(53,19): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(54,19): error C3646: 'clock_count': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(54,19): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(54,22): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(56,5): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(56,5): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(56,20): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(58,10): error C3646: 'read': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(58,10): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(58,21): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(59,18): error C2061: 구문 오류: 식별자 'ui16'
+C:\Projects\NES-emulator\NES\NES\CPU.h(61,11): error C3646: 'fetch': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(61,11): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(61,13): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(65,14): error C2059: 구문 오류: '<tag>::*'
+C:\Projects\NES-emulator\NES\NES\CPU.h(65,29): error C2091: 함수가 함수를 반환합니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(65,31): error C2059: 구문 오류: 'nullptr'
+C:\Projects\NES-emulator\NES\NES\CPU.h(65,38): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(66,14): error C2059: 구문 오류: '<tag>::*'
+C:\Projects\NES-emulator\NES\NES\CPU.h(66,30): error C2091: 함수가 함수를 반환합니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(66,32): error C2059: 구문 오류: 'nullptr'
+C:\Projects\NES-emulator\NES\NES\CPU.h(66,39): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(67,14): error C3646: 'cycles': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(67,14): error C2059: 구문 오류: '='
+C:\Projects\NES-emulator\NES\NES\CPU.h(67,17): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(73,9): error C3646: 'IMP': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(73,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(73,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(74,9): error C3646: 'IMM': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(74,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(74,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(75,9): error C3646: 'ZP0': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(75,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(75,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(76,9): error C3646: 'ZPX': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(76,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(76,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(77,9): error C3646: 'ZPY': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(77,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(77,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(78,9): error C3646: 'REL': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(78,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(78,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(79,9): error C3646: 'ABS': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(79,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(79,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(80,9): error C3646: 'ABX': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(80,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(80,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(81,9): error C3646: 'ABY': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(81,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(81,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(82,9): error C3646: 'IND': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(82,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(82,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(83,9): error C3646: 'IZX': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(83,9): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\CPU.h(83,11): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(84,9): error C3646: 'IZY': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\CPU.h(84,9): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+  Cartridge.cpp
+  CPU.cpp
+C:\Projects\NES-emulator\NES\NES\Bus.h(10,18): error C2061: 구문 오류: 식별자 'ui16'
+C:\Projects\NES-emulator\NES\NES\Bus.h(13,9): error C3646: 'cpu': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(13,9): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(14,13): error C2065: 'ui8': 선언되지 않은 식별자입니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(14,7): error C2923: 'std::array': 'ui8'은(는) '_Ty' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(17,18): error C2061: 구문 오류: 식별자 'ui16'
+C:\Projects\NES-emulator\NES\NES\Bus.h(17,33): error C2535: 'void Bus::write(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(10): message : 'Bus::write' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\Bus.h(18,10): error C3646: 'read': 알 수 없는 재정의 지정자입니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(18,10): error C2059: 구문 오류: '('
+C:\Projects\NES-emulator\NES\NES\Bus.h(18,46): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(33,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(38,23): error C2660: 'Bus::write': 함수는 2개의 인수를 사용하지 않습니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(10,7): message : 'Bus::write' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(804,21): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(812,17): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(817,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(823,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(829,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(835,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(841,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(847,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(848,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(853,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(854,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(859,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(860,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(865,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(866,14): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+C:\Projects\NES-emulator\NES\NES\CPU.cpp(871,17): error C2039: 'read': 'Bus'의 멤버가 아닙니다.
+C:\Projects\NES-emulator\NES\NES\Bus.h(5): message : 'Bus' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
