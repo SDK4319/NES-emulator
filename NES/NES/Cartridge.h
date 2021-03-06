@@ -1,21 +1,24 @@
 #pragma once
-#include<cstdint>
-#include<string>
-#include<fstream>
-#include<vector>
+#include <cstdint>
+#include <string>
+#include <fstream>
+#include <vector>
 
-#include"Mapper_NROM.h"
+
+#include "Mapper_NROM.h"
 
 class Cartridge
 {
-public:
-	Cartridge(const std::string& filepath);
+public:	
+	Cartridge(const std::string& sFileName);
 	~Cartridge();
 
-public:
-	bool IsVaildImage();
 
-	enum MIRROR {
+public:
+	bool ImageValid();
+
+	enum MIRROR
+	{
 		HORIZONTAL,
 		VERTICAL,
 		ONESCREEN_LO,
@@ -23,22 +26,22 @@ public:
 	} mirror = HORIZONTAL;
 
 private:
-	bool isValidImage = false;
+	bool bImageValid = false;
 
-	uint8_t MapperId = 0;
-	uint8_t PRGBanks = 0;
-	uint8_t CHRBanks = 0;
+	uint8_t nMapperID = 0;
+	uint8_t nPRGBanks = 0;
+	uint8_t nCHRBanks = 0;
 
-	std::vector<uint8_t> PRGMem;
-	std::vector<uint8_t> CHRMem;
+	std::vector<uint8_t> vPRGMemory;
+	std::vector<uint8_t> vCHRMemory;
 
-	std::shared_ptr<Mapper> p_Mapper;
+	std::shared_ptr<Mapper> pMapper;
 
 public:
-	bool cpuRead(uint16_t addr, uint8_t& data);
+	bool cpuRead(uint16_t addr, uint8_t &data);
 	bool cpuWrite(uint16_t addr, uint8_t data);
 
-	bool ppuRead(uint16_t addr, uint8_t& data);
+	bool ppuRead(uint16_t addr, uint8_t &data);
 	bool ppuWrite(uint16_t addr, uint8_t data);
 
 	void reset();

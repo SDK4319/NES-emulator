@@ -3,7 +3,7 @@
 bool Emulator::create(std::string filepath) {
 	cart = std::make_shared<Cartridge>(filepath);
 
-	if (cart->IsVaildImage() == false)
+	if (cart->ImageValid() == false)
 		return false;
 
 	nes.insertCartridge(cart);
@@ -14,10 +14,6 @@ bool Emulator::create(std::string filepath) {
 }
 
 bool Emulator::update(float fElapsedTime, uint8_t controller1, uint8_t controller2) {
-
-	/*
-	Screen Clear
-	*/
 
 	nes.controller[0] = controller1;
 	nes.controller[1] = 0x00;
@@ -33,9 +29,5 @@ bool Emulator::update(float fElapsedTime, uint8_t controller1, uint8_t controlle
 		}
 	}
 
-	cv::imshow("Pattern Table 0 - Background", nes.ppu.getPatternTable(0, nSelectedPalette));
-	cv::imshow("Pattern Table 1 - Foreground", nes.ppu.getPatternTable(1, nSelectedPalette));
-	cv::imshow("Render", nes.ppu.getScreen());
-	cv::waitKey(1);
 	return true;
 }

@@ -1,85 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="CPU">
-      <UniqueIdentifier>{2fa6d369-5f2c-49e6-86a7-9625df62ed36}</UniqueIdentifier>
+    <Filter Include="000.Main">
+      <UniqueIdentifier>{54855a21-41c7-4875-8644-41cbb3d48184}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="001.Emulator">
+      <UniqueIdentifier>{48888ae7-b2bc-4692-822e-839faf2b4595}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header">
-      <UniqueIdentifier>{4861f701-df2d-427d-9f98-988c3e329c22}</UniqueIdentifier>
+    <Filter Include="002.Bus">
+      <UniqueIdentifier>{7cd91400-1b54-4fc1-b562-5179c3d3f3f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Bus">
-      <UniqueIdentifier>{b2dca058-8b39-4e01-8579-5785296ee399}</UniqueIdentifier>
+    <Filter Include="003.CPU">
+      <UniqueIdentifier>{a04d9c39-836a-4683-9e3a-7a679fb3723d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Cartridge">
-      <UniqueIdentifier>{78d8b6f5-8b20-4a88-925d-511144323300}</UniqueIdentifier>
+    <Filter Include="004.PPU">
+      <UniqueIdentifier>{af4df7d8-3063-4eb8-aca4-3248f5a352ca}</UniqueIdentifier>
     </Filter>
-    <Filter Include="PPU">
-      <UniqueIdentifier>{039a869e-1373-49fb-aade-97278f52b197}</UniqueIdentifier>
+    <Filter Include="005.Mapper">
+      <UniqueIdentifier>{de407216-9fc9-46f9-8e13-1ce194e5b9a2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mapper">
-      <UniqueIdentifier>{f0fa4a89-651d-4c61-871c-3c71024cf3b2}</UniqueIdentifier>
+    <Filter Include="005.Mapper\Mapper_NROM">
+      <UniqueIdentifier>{c85d3010-cdf6-43ff-a6df-0d6918813499}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mapper\Mapper_NROM">
-      <UniqueIdentifier>{7a0001ec-580f-4e10-8ea0-679d6c1ba181}</UniqueIdentifier>
+    <Filter Include="006.Cartridge">
+      <UniqueIdentifier>{31404f2e-f4f9-4c67-93b4-a37f0c595c35}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Emulator">
-      <UniqueIdentifier>{45db717b-0655-4cec-9f92-d0509abd535c}</UniqueIdentifier>
+    <Filter Include="007.Util">
+      <UniqueIdentifier>{0c5ff53f-8361-4237-bef0-e231b3573b8f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
-    <ClCompile Include="CPU.cpp">
-      <Filter>CPU</Filter>
-    </ClCompile>
-    <ClCompile Include="Bus.cpp">
-      <Filter>Bus</Filter>
-    </ClCompile>
-    <ClCompile Include="Cartridge.cpp">
-      <Filter>Cartridge</Filter>
-    </ClCompile>
-    <ClCompile Include="PPU.cpp">
-      <Filter>PPU</Filter>
-    </ClCompile>
-    <ClCompile Include="Mapper.cpp">
-      <Filter>Mapper</Filter>
-    </ClCompile>
-    <ClCompile Include="Mapper_NROM.cpp">
-      <Filter>Mapper\Mapper_NROM</Filter>
+      <Filter>000.Main</Filter>
     </ClCompile>
     <ClCompile Include="Emulator.cpp">
-      <Filter>Emulator</Filter>
+      <Filter>001.Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Bus.cpp">
+      <Filter>002.Bus</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU.cpp">
+      <Filter>003.CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="PPU.cpp">
+      <Filter>004.PPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper.cpp">
+      <Filter>005.Mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper_NROM.cpp">
+      <Filter>005.Mapper\Mapper_NROM</Filter>
+    </ClCompile>
+    <ClCompile Include="Cartridge.cpp">
+      <Filter>006.Cartridge</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CPU.h">
-      <Filter>CPU</Filter>
+    <ClInclude Include="Emulator.h">
+      <Filter>001.Emulator</Filter>
     </ClInclude>
     <ClInclude Include="Bus.h">
-      <Filter>Bus</Filter>
+      <Filter>002.Bus</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Cartridge.h">
-      <Filter>Cartridge</Filter>
+    <ClInclude Include="CPU.h">
+      <Filter>003.CPU</Filter>
     </ClInclude>
     <ClInclude Include="PPU.h">
-      <Filter>PPU</Filter>
+      <Filter>004.PPU</Filter>
     </ClInclude>
     <ClInclude Include="Mapper.h">
-      <Filter>Mapper</Filter>
+      <Filter>005.Mapper</Filter>
     </ClInclude>
     <ClInclude Include="Mapper_NROM.h">
-      <Filter>Mapper\Mapper_NROM</Filter>
+      <Filter>005.Mapper\Mapper_NROM</Filter>
     </ClInclude>
-    <ClInclude Include="Emulator.h">
-      <Filter>Emulator</Filter>
+    <ClInclude Include="Cartridge.h">
+      <Filter>006.Cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>007.Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>007.Util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,5 +1,6 @@
+
 #pragma once
-#include<cstdint>
+#include <cstdint>
 
 class Mapper
 {
@@ -8,16 +9,16 @@ public:
 	~Mapper();
 
 public:
-	virtual bool cpuMapRead(uint16_t addr, uint32_t& mapped_addr) = 0;
-	virtual bool cpuMapWrite(uint16_t addr, uint32_t& mapped_addr, uint8_t data = 0) = 0;
+	virtual bool cpuMapRead(uint16_t addr, uint32_t &mapped_addr)	 = 0;
+	virtual bool cpuMapWrite(uint16_t addr, uint32_t &mapped_addr, uint8_t data = 0)	 = 0;
 
-	virtual bool ppuMapRead(uint16_t addr, uint32_t& mapped_addr) = 0;
-	virtual bool ppuMapWrite(uint16_t addr, uint32_t& mapped_addr) = 0;
+	virtual bool ppuMapRead(uint16_t addr, uint32_t &mapped_addr)	 = 0;
+	virtual bool ppuMapWrite(uint16_t addr, uint32_t &mapped_addr)	 = 0;
 
 	virtual void reset() = 0;
 
 protected:
-	uint8_t PRGBanks = 0;
-	uint8_t CHRBanks = 0;
+	uint8_t nPRGBanks = 0;
+	uint8_t nCHRBanks = 0;
 };
 
