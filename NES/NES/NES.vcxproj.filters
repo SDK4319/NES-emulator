@@ -20,6 +20,15 @@
     <Filter Include="PPU">
       <UniqueIdentifier>{039a869e-1373-49fb-aade-97278f52b197}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Mapper">
+      <UniqueIdentifier>{f0fa4a89-651d-4c61-871c-3c71024cf3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mapper\Mapper_NROM">
+      <UniqueIdentifier>{7a0001ec-580f-4e10-8ea0-679d6c1ba181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulator">
+      <UniqueIdentifier>{45db717b-0655-4cec-9f92-d0509abd535c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -37,6 +46,15 @@
     <ClCompile Include="PPU.cpp">
       <Filter>PPU</Filter>
     </ClCompile>
+    <ClCompile Include="Mapper.cpp">
+      <Filter>Mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper_NROM.cpp">
+      <Filter>Mapper\Mapper_NROM</Filter>
+    </ClCompile>
+    <ClCompile Include="Emulator.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPU.h">
@@ -53,6 +71,15 @@
     </ClInclude>
     <ClInclude Include="PPU.h">
       <Filter>PPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper.h">
+      <Filter>Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper_NROM.h">
+      <Filter>Mapper\Mapper_NROM</Filter>
+    </ClInclude>
+    <ClInclude Include="Emulator.h">
+      <Filter>Emulator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

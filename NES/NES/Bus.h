@@ -1,20 +1,44 @@
 #pragma once
-#include"Header.h"
 
+#include<cstdint>
+#include<array>
+
+#include"CPU.h"
+#include"PPU.h"
+#include"Cartridge.h"
 
 class Bus
 {
 public:
 	Bus();
 	~Bus();
-	void write(ui16 addr, ui8 data);
 
 public:
 	CPU cpu;
-	std::array<ui8, 64 * 1024> ram;
+	PPU ppu;
+	std::shared_ptr<Cartridge> cart;
+	uint8_t cpuRam[0x2000];
+	uint8_t controller[2];
+public:
+	void	cpuWrite(uint16_t addr, uint8_t data);
+	uint8_t		cpuRead(uint16_t addr, bool isReadOnly = false);
+
+private:
+	uint32_t nSystemClockCounter = 0;
+	uint8_t controller_state[2];
+
+
+private:
+	uint8_t dma_page = 0x00;
+	uint8_t dma_addr = 0x00;
+	uint8_t dma_data = 0x00;
+
+	bool dma_dummy = true;
+	bool dma_transfer = false;
 
 public:
-	void write(ui16 addr, ui8 data);
-	ui8 read(ui16 addr, bool isReadOnly = false);
+	void insertCartridge(const std::shared_ptr<Cartridge>& cart);
+	void reset();
+	void clock();
 };
 

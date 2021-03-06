@@ -148,14 +148,20 @@
     <ClCompile Include="Bus.cpp" />
     <ClCompile Include="Cartridge.cpp" />
     <ClCompile Include="CPU.cpp" />
+    <ClCompile Include="Emulator.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mapper.cpp" />
+    <ClCompile Include="Mapper_NROM.cpp" />
     <ClCompile Include="PPU.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bus.h" />
     <ClInclude Include="Cartridge.h" />
     <ClInclude Include="CPU.h" />
+    <ClInclude Include="Emulator.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="Mapper.h" />
+    <ClInclude Include="Mapper_NROM.h" />
     <ClInclude Include="PPU.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

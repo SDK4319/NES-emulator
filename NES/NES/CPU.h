@@ -1,5 +1,10 @@
 #pragma once
-#include"Header.h"
+
+#include<vector>
+#include<string>
+#include<map>
+
+class Bus;
 
 
 //Processor: MOS 6502
@@ -10,12 +15,12 @@ public:
 	~CPU();
 
 	//Registers
-	ui8		a		= 0x00;	// Accumulator
-	ui8		x		= 0x00;	// X reg
-	ui8		y		= 0x00; // Y reg
-	ui8		sp		= 0x00; // Stack Pointer
-	ui16	pc		= 0x0000; // Program Counter
-	ui8		status	= 0x00; // Status
+	uint8_t		a		= 0x00;	// Accumulator
+	uint8_t		x		= 0x00;	// X reg
+	uint8_t		y		= 0x00; // Y reg
+	uint8_t		sp		= 0x00; // Stack Pointer
+	uint16_t	pc		= 0x0000; // Program Counter
+	uint8_t		status	= 0x00; // Status
 
 	void clock();
 	void reset();
@@ -25,7 +30,7 @@ public:
 
 	void setBus(Bus* bus) { this->bus = bus; }
 
-	std::map<ui16, std::string> disassemble(ui16 nStart, ui16 nStop);
+	std::map<uint16_t, std::string> disassemble(uint16_t nStart, uint16_t nStop);
 
 
 
@@ -42,106 +47,106 @@ public:
 
 private:
 
-	ui8 GetFlag(FLAGS6502 f);
+	uint8_t GetFlag(FLAGS6502 f);
 	void SetFlag(FLAGS6502 f, bool v);
 
-	ui8 fetched = 0x00;
-	ui16 temp = 0x0000;
-	ui16 addr_abs = 0x0000;
-	ui16 addr_rel = 0x0000;
-	ui8 opcode = 0x00;
-	ui8 cycles = 0x00;
-	ui32 clock_count = 0;
+	uint8_t fetched = 0x00;
+	uint16_t temp = 0x0000;
+	uint16_t addr_abs = 0x0000;
+	uint16_t addr_rel = 0x0000;
+	uint8_t opcode = 0x00;
+	uint8_t cycles = 0x00;
+	uint32_t clock_count = 0;
 
 	Bus* bus = nullptr;
 
-	ui8 read(ui16 addr);
-	void write(ui16 addr, ui8 data);
+	uint8_t read(uint16_t addr);
+	void write(uint16_t addr, uint8_t data);
 
-	ui8 fetch();
+	uint8_t fetch();
 
 	struct INSTRUCTION {
 		std::string name;
-		ui8 (CPU::*operate)(void) = nullptr;
-		ui8 (CPU::*addrmode)(void) = nullptr;
-		ui8 cycles = 0;
+		uint8_t (CPU::*operate)(void) = nullptr;
+		uint8_t (CPU::*addrmode)(void) = nullptr;
+		uint8_t cycles = 0;
 	};
 
 	std::vector<INSTRUCTION> lookup;
 
 private: // Addressing Modes
-	ui8 IMP();	
-	ui8 IMM();
-	ui8 ZP0();	
-	ui8 ZPX();
-	ui8 ZPY();	
-	ui8 REL();
-	ui8 ABS();	
-	ui8 ABX();
-	ui8 ABY();	
-	ui8 IND();
-	ui8 IZX();	
-	ui8 IZY();
+	uint8_t IMP();	
+	uint8_t IMM();
+	uint8_t ZP0();	
+	uint8_t ZPX();
+	uint8_t ZPY();	
+	uint8_t REL();
+	uint8_t ABS();	
+	uint8_t ABX();
+	uint8_t ABY();	
+	uint8_t IND();
+	uint8_t IZX();	
+	uint8_t IZY();
 
 private: // Opcodes
-	ui8 ADC();	
-	ui8 AND();	
-	ui8 ASL();	
-	ui8 BCC();
-	ui8 BCS();	
-	ui8 BEQ();	
-	ui8 BIT();	
-	ui8 BMI();
-	ui8 BNE();	
-	ui8 BPL();	
-	ui8 BRK();	
-	ui8 BVC();
-	ui8 BVS();	
-	ui8 CLC();	
-	ui8 CLD();	
-	ui8 CLI();
-	ui8 CLV();	
-	ui8 CMP();	
-	ui8 CPX();	
-	ui8 CPY();
-	ui8 DEC();	
-	ui8 DEX();	
-	ui8 DEY();	
-	ui8 EOR();
-	ui8 INC();	
-	ui8 INX();	
-	ui8 INY();	
-	ui8 JMP();
-	ui8 JSR();	
-	ui8 LDA();	
-	ui8 LDX();	
-	ui8 LDY();
-	ui8 LSR();	
-	ui8 NOP();	
-	ui8 ORA();	
-	ui8 PHA();
-	ui8 PHP();	
-	ui8 PLA();	
-	ui8 PLP();	
-	ui8 ROL();
-	ui8 ROR();	
-	ui8 RTI();	
-	ui8 RTS();	
-	ui8 SBC();
-	ui8 SEC();	
-	ui8 SED();	
-	ui8 SEI();	
-	ui8 STA();
-	ui8 STX();	
-	ui8 STY();	
-	ui8 TAX();	
-	ui8 TAY();
-	ui8 TSX();	
-	ui8 TXA();	
-	ui8 TXS();	
-	ui8 TYA();
+	uint8_t ADC();	
+	uint8_t AND();	
+	uint8_t ASL();	
+	uint8_t BCC();
+	uint8_t BCS();	
+	uint8_t BEQ();	
+	uint8_t BIT();	
+	uint8_t BMI();
+	uint8_t BNE();	
+	uint8_t BPL();	
+	uint8_t BRK();	
+	uint8_t BVC();
+	uint8_t BVS();	
+	uint8_t CLC();	
+	uint8_t CLD();	
+	uint8_t CLI();
+	uint8_t CLV();	
+	uint8_t CMP();	
+	uint8_t CPX();	
+	uint8_t CPY();
+	uint8_t DEC();	
+	uint8_t DEX();	
+	uint8_t DEY();	
+	uint8_t EOR();
+	uint8_t INC();	
+	uint8_t INX();	
+	uint8_t INY();	
+	uint8_t JMP();
+	uint8_t JSR();	
+	uint8_t LDA();	
+	uint8_t LDX();	
+	uint8_t LDY();
+	uint8_t LSR();	
+	uint8_t NOP();	
+	uint8_t ORA();	
+	uint8_t PHA();
+	uint8_t PHP();	
+	uint8_t PLA();	
+	uint8_t PLP();	
+	uint8_t ROL();
+	uint8_t ROR();	
+	uint8_t RTI();	
+	uint8_t RTS();	
+	uint8_t SBC();
+	uint8_t SEC();	
+	uint8_t SED();	
+	uint8_t SEI();	
+	uint8_t STA();
+	uint8_t STX();	
+	uint8_t STY();	
+	uint8_t TAX();	
+	uint8_t TAY();
+	uint8_t TSX();	
+	uint8_t TXA();	
+	uint8_t TXS();	
+	uint8_t TYA();
 	// Unofficial OPCode
-	ui8 XXX();
+	uint8_t XXX();
 
 };
 
